@@ -46,11 +46,25 @@ const Login = () => {
         <div className="login">
             <h1>Login</h1>
 
-            <h4>Email</h4>
-            <input name="email"  onChange={changeHandler} type="email"></input>
+            {/* <h4>Email</h4>
+            <input name="email"  onChange={changeHandler} type="email"></input> */}
 
-            <h4>Password</h4>
-            <input name="password" onChange={changeHandler} type="password"></input>
+            {/* <h4>Password</h4>
+            <input name="password" onChange={changeHandler} type="password"></input> */}
+            
+            <div className="login__txtField">
+                <input name="email" onChange={changeHandler} required></input>
+                <span></span>
+                <label>Email</label>
+            </div>
+
+            <div className="login__txtField">
+                {/* <h4>Password</h4> */}
+                <input name="password" onChange={changeHandler} type="password" required></input>
+                <span></span>
+                <label>Password</label>
+            </div>
+            
             <br/> <br/>
 
             <button onClick={handleSubmit}>LogIn</button>

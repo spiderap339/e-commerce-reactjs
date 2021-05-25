@@ -11,6 +11,9 @@ function Product({image, name, price}) {
     return (
         <div className="product">
             
+            {/* name */}
+            <p> {name} </p>
+
             {/* Image */}
             <img
                 className="product__image" 
@@ -19,11 +22,9 @@ function Product({image, name, price}) {
             />
 
             <div className="product__info">
-                {/* name */}
-                <h3> {name} </h3>
-
+                
                 {/* price */}
-                <h3>{price}</h3> 
+                <h3>${price}</h3> 
             </div>
             
 

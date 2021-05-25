@@ -27,7 +27,7 @@ const ProductDesc = ({productArray, prodId}) => {
 
 
         email? (
-            
+
         db.collection("userid").doc(email).collection("carts").doc().set({
             id : prodId, 
             name : prodDisplay.title, 
@@ -61,49 +61,36 @@ const ProductDesc = ({productArray, prodId}) => {
                     alt="Image not found"
                 />
             </div>
-            <div className="productDesc__info">
-                <h1>{prodDisplay.name}</h1>
 
-                <p>{prodDisplay.description}</p>
-
-                <h3><strong>{prodDisplay.price}</strong></h3>
-            </div>
-
-            <div className="productDesc__addCart">
-                {/* <button onClick = {() => {
-                    console.log('added')
-                    setState([...state,
-                        {
-                            id : prodId, 
-                            name : prodDisplay.name, 
-                            price: prodDisplay.price,
-                            image : prodDisplay.image
-                        }
-                    ])
+            <div className="productDesc__desc">
+                <div className="productDesc__desc__info">
+                    <h1>{prodDisplay.title}</h1>
                     
-                }}>
-                    Add to Cart
-                </button> */}
+                    <p>{prodDisplay.description}</p>
 
-                <button onClick={handleAddCart}>
-                    Add to Cart
-                </button>
+                    <h3><strong>${prodDisplay.price}</strong></h3>
+                </div>
 
-                <button>
-                    Buy Now
-                </button>
+                <div className="productDesc__desc__addCart">
+                    <div>
+                        <button onClick={handleAddCart}>
+                            Add to Cart
+                        </button>
+                    </div>
+                    
+                    <div>
+                    <a href={"http://localhost:3000/cart"} > 
+                        <button onClick={handleAddCart}>
+                            Buy Now
+                        </button>
+                    </a>
+                        
+                    </div>
+                    
 
-
-            </div>  
-            {/* {
-            firebase.auth().onAuthStateChanged((firebaseUser)=>{
-                    firebaseUser?
-                    setEmail(firebaseUser.email):
-                    setEmail(null)
-            })
-            }  */}
-           
-                
+                </div>  
+            </div>
+               
         </div>
     )
 }

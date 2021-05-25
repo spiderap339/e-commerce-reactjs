@@ -5,16 +5,17 @@ import Avatar from 'react-avatar';
 import Store,{Context} from "./Store"
 import {NavLink,BrowserRouter } from 'react-router-dom'
 import firebase,{auth} from "firebase"
+import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 
 function Header() {
 
-    //const [email, setEmail] = useState(null);
     const {email, cartArray} = useContext(Context);
     // const cartArray=[];
     console.log("from header email", email)
     // console.log('ProductCart',state.productCart)
     // console.log("email", state);
     const url="http://localhost:3000/"
+    // const url = "https://e-commerce-67ca6.web.app/"
     //console.log("state=>",state)
     
     const LogOut=()=>{
@@ -25,15 +26,13 @@ function Header() {
           });
     }
 
-    
-
     return (
         <div className="header">
             <a href={`${url}`}>
             <div className="header__image">
             
                 <img
-                src="https://pngimg.com/uploads/amazon/amazon_PNG25.png"
+                src="https://i.pinimg.com/originals/ab/ca/4c/abca4c51c7e166b2980105b5e98b7ac2.jpg"
                 alt="amazon_logo"
                 />  
               
@@ -41,8 +40,13 @@ function Header() {
             </a>
 
             <div className="header__search">
-                <input type="text" placeholder=""/>
+                {/* <input type="text" placeholder=""/>
+                <button><FaSearch/></button> */}
+
+
+                 <input type="text" placeholder=""/>
                 <button><FaSearch/></button>
+                
             </div>
             {
                 email === null ? (

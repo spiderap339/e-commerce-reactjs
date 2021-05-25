@@ -88,7 +88,7 @@ function Home() {
 
             <div className="home__banner">
                 <img 
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Jewellery/GW/unrec2/PC-BUnk-1500-600._CB415511219_.jpg" 
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/Multititle/May/M17/non-reg/1500x600_Hero-Tall_JPN._CB667972819_.jpg" 
                     alt="banner"
                     width="100%"
                 />
@@ -124,7 +124,7 @@ function Home() {
             >
                 <div className="home__productModal">
                     <ProductDesc productArray={productArray} prodId={prodId}/>
-                    <button onClick={()=>setOpenModal(false)}>CLOSE</button>
+                    {/* <button onClick={()=>setOpenModal(false)}>CLOSE</button> */}
                 </div>
                 
             </ReactModal>

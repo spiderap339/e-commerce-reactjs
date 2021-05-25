@@ -4,8 +4,10 @@ export const CartProduct = ({id, image, name, price}) => {
     return (
        
         <div className="cartProduct">
+            <div className="cartProduct__img">
+                <img src={image} />
+            </div>
             
-            <img src={image} />
 
             <div className="cartProduct__info">
                 <div className="cartProduct__infoName">

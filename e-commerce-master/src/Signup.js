@@ -60,15 +60,33 @@ const Signup = () => {
     return (
         <div className="login">
             <h1>SignUp</h1>
+            <div className="login__txtField">
+                <input name="username" onChange={changeHandler} required></input>
+                <span></span>
+                <label>Username</label>
+            </div>
             
-            <h4>Username</h4>
-            <input name="username" onChange={changeHandler}></input>
+            <div className="login__txtField">
+                <input name="email" onChange={changeHandler} required></input>
+                <span></span>
+                <label>Email</label>
+            </div>
 
-            <h4>Email</h4>
-            <input name="email"  onChange={changeHandler} type="email"></input>
-
-            <h4>Password</h4>
-            <input name="password" onChange={changeHandler} type="password"></input>
+            
+            
+            {/* <div className="login__txtField">
+                <input  onChange={changeHandler} type="email" required></input>
+                <span></span>
+                <label>Email</label>
+            </div> */}
+            
+            <div className="login__txtField">
+                {/* <h4>Password</h4> */}
+                <input name="password" onChange={changeHandler} type="password" required></input>
+                <span></span>
+                <label>Password</label>
+            </div>
+            
             <br/> <br/>
 
             <button onClick={handleSubmit}>SignUp</button>

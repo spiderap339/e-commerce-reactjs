@@ -82,7 +82,9 @@ const Cart = () => {
                 </div>
 
                 <div className="cart__totalPrice">
-                    <h3>Subtotal({cartArray.length} items): ${totalPrice}</h3>
+                    <p>Your order is eligible for FREE Delivery.</p>
+                    <p> Select this option at checkout.</p>
+                    <h3>Subtotal ({cartArray.length} items): <span>${totalPrice}</span></h3>
                     <button>Proceed to Buy</button>
                 </div>
             
