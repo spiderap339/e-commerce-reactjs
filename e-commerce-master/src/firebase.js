@@ -1,13 +1,13 @@
 import firebase from 'firebase';
 
 const firebaseApp= firebase.initializeApp( {
-    apiKey: "AIzaSyABgTX0qpACB4Ad-hHk-YtRxjZR5hispfU",
-    authDomain: "e-commerce-67ca6.firebaseapp.com",
-    projectId: "e-commerce-67ca6",
-    storageBucket: "e-commerce-67ca6.appspot.com",
-    messagingSenderId: "864388642741",
-    appId: "1:864388642741:web:d4cddf9e6f340513618bfc",
-    measurementId: "G-PEYQ4WCPGP"
+    apiKey: "AIzaSyABgTX0qpACB4Ad-hHk-YtRx",
+    authDomain: "e-commerce-67.firebaseapp.com",
+    projectId: "e-commercea6",
+    storageBucket: "e-comme7ca6.appspot.com",
+    messagingSenderId: "864342741",
+    appId: "1:864388642741:web:d4cddfbfc",
+    measurementId: "G-PECPGP"
 });
 
 const db=firebaseApp.firestore();
